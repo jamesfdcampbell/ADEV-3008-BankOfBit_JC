@@ -16,3 +16,9 @@ C:\Users\james\OneDrive - Red River College\BIT\Term 3\Programming 3\Assignments
 C:\Users\james\OneDrive - Red River College\BIT\Term 3\Programming 3\Assignments\BankOfBIT_JC\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
 C:\Users\james\OneDrive - Red River College\BIT\Term 3\Programming 3\Assignments\BankOfBIT_JC\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.dll
 C:\Users\james\OneDrive - Red River College\BIT\Term 3\Programming 3\Assignments\BankOfBIT_JC\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.pdb
+C:\Users\james\Desktop\BankOfBIT_JC\BankOfBIT_JC\Utility\bin\Debug\Utility.dll
+C:\Users\james\Desktop\BankOfBIT_JC\BankOfBIT_JC\Utility\bin\Debug\Utility.pdb
+C:\Users\james\Desktop\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
+C:\Users\james\Desktop\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.dll
+C:\Users\james\Desktop\BankOfBIT_JC\BankOfBIT_JC\Utility\obj\Debug\Utility.pdb
