@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using BankOfBIT_JC.Data;
+using BankOfBIT_JC.Models;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using BankOfBIT_JC.Data;
-using BankOfBIT_JC.Models;
 
 namespace BankOfBIT_JC.Controllers
 {

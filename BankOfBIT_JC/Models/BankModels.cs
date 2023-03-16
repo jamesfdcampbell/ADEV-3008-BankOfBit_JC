@@ -6,19 +6,14 @@
  * Updated: 2023-03-02
  */
 
+using BankOfBIT_JC.Data;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
-using System.Web.Services.Description;
-using BankOfBIT_JC.Data;
-using System.Data.Entity;
-using Microsoft.Ajax.Utilities;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
 
 namespace BankOfBIT_JC.Models
 {
@@ -608,7 +603,7 @@ namespace BankOfBIT_JC.Models
         {
             TransactionNumber = (long)StoredProcedure.NextNumber("NextTransaction");
         }
-        
+
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int TransactionId { get; set; }
 
@@ -743,7 +738,7 @@ namespace BankOfBIT_JC.Models
         {
             this.NextAvailableNumber = 200000;
         }
-        
+
         /// <summary>
         /// Returns the single instance of the NextMortgageAccount class.
         /// </summary>
@@ -770,7 +765,7 @@ namespace BankOfBIT_JC.Models
     public class NextInvestmentAccount : NextUniqueNumber
     {
         private static NextInvestmentAccount nextInvestmentAccount { get; set; }
-        
+
         private NextInvestmentAccount()
         {
             this.NextAvailableNumber = 2000000;
@@ -802,7 +797,7 @@ namespace BankOfBIT_JC.Models
     public class NextChequingAccount : NextUniqueNumber
     {
         private static NextChequingAccount nextChequingAccount { get; set; }
-        
+
         private NextChequingAccount()
         {
             this.NextAvailableNumber = 20000000;
@@ -864,8 +859,8 @@ namespace BankOfBIT_JC.Models
     /// </summary>
     public class NextTransaction : NextUniqueNumber
     {
-        private static  NextTransaction nextTransaction;
-        
+        private static NextTransaction nextTransaction;
+
         private NextTransaction()
         {
             this.NextAvailableNumber = 700;
@@ -900,7 +895,7 @@ namespace BankOfBIT_JC.Models
         {
             try
             {
-                SqlConnection connection = new SqlConnection("Data Source=localhost; " + 
+                SqlConnection connection = new SqlConnection("Data Source=localhost; " +
                     "Initial Catalog=BankOfBIT_JCContext;Integrated Security=True");
                 long? returnValue = 0;
                 SqlCommand storedProcedure = new SqlCommand("next_number", connection);

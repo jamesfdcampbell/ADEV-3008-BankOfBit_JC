@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 
 namespace BankOfBIT_JC.Data
 {
@@ -14,7 +10,7 @@ namespace BankOfBIT_JC.Data
         // automatically whenever you change your model schema, please use data migrations.
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
-    
+
         public BankOfBIT_JCContext() : base("name=BankOfBIT_JCContext")
         {
         }
