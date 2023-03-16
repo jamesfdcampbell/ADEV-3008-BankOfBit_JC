@@ -78,6 +78,12 @@ namespace BankService
                 transaction.Withdrawal = null;
             }
 
+            // Sets the BankAccountId property to the specified accountId.
+            transaction.BankAccountId = accountId;
+
+            // Sets the TransactionTypeId property tot he specified transactionTypeId.
+            transaction.TransactionTypeId = transactionTypeId;
+
             // Sets the DateCreated property to the current date and time.
             transaction.DateCreated = DateTime.Now;
 
@@ -275,7 +281,7 @@ namespace BankService
             try
             {
                 BankAccount bankAccount = db.BankAccounts.Find(accountId);
-                AccountState accountState = db.AccountStates.Find(accountId);
+                AccountState accountState = bankAccount.AccountState;
 
                 if (bankAccount == null)
                 {
