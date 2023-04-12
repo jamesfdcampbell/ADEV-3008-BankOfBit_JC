@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "BankOfBIT_JC\Uti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankService", "BankService\BankService.csproj", "{FE0616CF-D144-4BCD-8B8B-9C74146BBB73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBanking", "OnlineBanking\OnlineBanking.csproj", "{2632152B-9559-48F8-A5EA-0CCC16EE55EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE0616CF-D144-4BCD-8B8B-9C74146BBB73} = {FE0616CF-D144-4BCD-8B8B-9C74146BBB73}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +32,10 @@ Global
 		{FE0616CF-D144-4BCD-8B8B-9C74146BBB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0616CF-D144-4BCD-8B8B-9C74146BBB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE0616CF-D144-4BCD-8B8B-9C74146BBB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

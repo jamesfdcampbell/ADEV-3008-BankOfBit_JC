@@ -358,7 +358,7 @@ namespace BankOfBIT_JC.Models
                 }
             }
 
-            if (bankAccount.Balance > doubleLowerLimit)
+            else if (bankAccount.Balance > doubleLowerLimit)
             {
                 adjustedRate += 0.005;
             }

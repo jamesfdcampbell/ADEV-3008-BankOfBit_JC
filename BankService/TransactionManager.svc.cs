@@ -39,6 +39,8 @@ namespace BankService
 
                 bankAccount.Balance += amount;
 
+                bankAccount.ChangeState();
+
                 db.SaveChanges();
 
                 return bankAccount.Balance;
