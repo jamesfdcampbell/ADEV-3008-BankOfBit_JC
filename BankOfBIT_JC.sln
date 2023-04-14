@@ -14,6 +14,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBanking", "OnlineBank
 		{FE0616CF-D144-4BCD-8B8B-9C74146BBB73} = {FE0616CF-D144-4BCD-8B8B-9C74146BBB73}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskedLabel", "MaskedLabel\MaskedLabel.csproj", "{049F1B57-22DE-42E2-A648-B64B82BF6DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsBanking", "WindowsBanking\WindowsBanking.csproj", "{939AD8EE-C822-4CD7-838E-48644F945EF7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE0616CF-D144-4BCD-8B8B-9C74146BBB73} = {FE0616CF-D144-4BCD-8B8B-9C74146BBB73}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +43,14 @@ Global
 		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2632152B-9559-48F8-A5EA-0CCC16EE55EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049F1B57-22DE-42E2-A648-B64B82BF6DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049F1B57-22DE-42E2-A648-B64B82BF6DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049F1B57-22DE-42E2-A648-B64B82BF6DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049F1B57-22DE-42E2-A648-B64B82BF6DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939AD8EE-C822-4CD7-838E-48644F945EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939AD8EE-C822-4CD7-838E-48644F945EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939AD8EE-C822-4CD7-838E-48644F945EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939AD8EE-C822-4CD7-838E-48644F945EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,7 +39,7 @@ namespace Utility
             //compare account type to predefined types
             for (int i = 0; i < ACCOUNT_TYPE.Length; i++)
             {
-                //if a match, return the corresonding mask
+                //if a match, return the corresponding mask
                 if (accountType.ToLower().Equals(ACCOUNT_TYPE[i].ToLower()))
                 {
                     format = ACCOUNT_MASK[i];
