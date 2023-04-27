@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Bank Transfer file -->
+<account_update date="2023-04-27" institution="38028" checksum="22222">
+  <transaction>
+    <institution>38028</institution>
+    <account_no>22222</account_no>
+    <type>6</type>
+    <amount>0</amount>
+    <notes>***ERROR BAD HEADER DATE***</notes>
+  </transaction>
+</account_update>

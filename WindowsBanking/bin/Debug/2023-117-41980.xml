@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Bank Transfer file -->
+<account_update date="2023-04-27" institution="41980" checksum="511106">
+  <transaction>
+    <from_institution>41980</from_institution>
+    <account_no>11111</account_no>
+    <type>2</type>
+    <in>0</in>
+    <out>100</out>
+    <notes>*****ERROR CHECKSUM DOES NOT MATCH*****</notes>
+  </transaction>
+</account_update>

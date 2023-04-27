@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.institutionComboBox = new System.Windows.Forms.ComboBox();
+            this.institutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lnkProcess = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.txtKey = new System.Windows.Forms.TextBox();
@@ -37,10 +40,12 @@
             this.rtxtLog = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.institutionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.institutionComboBox);
             this.groupBox1.Controls.Add(this.lnkProcess);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtKey);
@@ -52,6 +57,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Transmission Selection";
+            // 
+            // institutionComboBox
+            // 
+            this.institutionComboBox.DataSource = this.institutionBindingSource;
+            this.institutionComboBox.DisplayMember = "Description";
+            this.institutionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.institutionComboBox.Enabled = false;
+            this.institutionComboBox.FormattingEnabled = true;
+            this.institutionComboBox.Location = new System.Drawing.Point(53, 109);
+            this.institutionComboBox.Name = "institutionComboBox";
+            this.institutionComboBox.Size = new System.Drawing.Size(161, 21);
+            this.institutionComboBox.TabIndex = 5;
+            this.institutionComboBox.ValueMember = "InstitutionNumber";
+            // 
+            // institutionBindingSource
+            // 
+            this.institutionBindingSource.DataSource = typeof(BankOfBIT_JC.Models.Institution);
             // 
             // lnkProcess
             // 
@@ -91,6 +113,7 @@
             this.radSelect.TabStop = true;
             this.radSelect.Text = "Select a Transmission";
             this.radSelect.UseVisualStyleBackColor = true;
+            this.radSelect.CheckedChanged += new System.EventHandler(this.radSelect_CheckedChanged);
             // 
             // radAll
             // 
@@ -102,6 +125,7 @@
             this.radAll.TabStop = true;
             this.radAll.Text = "Run All Transmissions";
             this.radAll.UseVisualStyleBackColor = true;
+            this.radAll.CheckedChanged += new System.EventHandler(this.radAll_CheckedChanged);
             // 
             // rtxtLog
             // 
@@ -133,6 +157,7 @@
             this.Load += new System.EventHandler(this.BatchProcess_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.institutionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,5 +173,7 @@
         private System.Windows.Forms.RadioButton radAll;
         private System.Windows.Forms.RichTextBox rtxtLog;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox institutionComboBox;
+        private System.Windows.Forms.BindingSource institutionBindingSource;
     }
 }

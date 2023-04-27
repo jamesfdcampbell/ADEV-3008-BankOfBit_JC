@@ -44,8 +44,8 @@ namespace WindowsBanking
         /// </summary>
         private void PopulateConstructorData()
         {
-            this.constructorData.Client = (Client)clientBindingSource.Current;
-            this.constructorData.BankAccount = (BankAccount)bankAccountBindingSource.Current;
+            constructorData.Client = (Client)clientBindingSource.Current;
+            constructorData.BankAccount = (BankAccount)bankAccountBindingSource.Current;
         }
 
         /// <summary>

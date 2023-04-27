@@ -12,7 +12,6 @@ namespace WindowsBanking
 
         ConstructorData constructorData;
 
-
         /// <summary>
         /// Form can only be opened with a Constructor Data object
         /// containing client and account details.
